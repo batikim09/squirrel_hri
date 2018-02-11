@@ -190,14 +190,14 @@ def ser(args):
 			
 		if args.sync:#synchronous mode
 			if is_speech == 1:
-				speech_frame_len = speech_frame_len + frame_len
+				speech_frame_len = speech_frame_len + chunk
 
 			if frames == '': 
 				frames = data
 			else:
 				frames = frames + data
 
-			total_frame_len = total_frame_len + frame_len
+			total_frame_len = total_frame_len + chunk
 
 			if args.model_file and total_frame_len > min_voice_frame_len:		
 				
