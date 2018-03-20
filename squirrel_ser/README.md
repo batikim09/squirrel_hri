@@ -50,6 +50,10 @@ If you want and know pulse & alsa works, you can choose your own input device as
 
 pulseaudio --start
 
+To run a demon, instead,
+
+pulseaudio -D
+
 1. find your device by:
 See: https://wiki.archlinux.org/index.php/PulseAudio/Examples
 
